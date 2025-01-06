@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Hafiza Fatima</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #bfef00;
+            color: #f8f9fa;
+        }
+        .navbar {
+            margin-bottom: 0;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #3345aa, #cbe559);
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            transition: transform 0.5s ease;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            transition: opacity 0.5s ease;
+        }
+        .hero:hover h1 {
+            transform: scale(1.1);
+        }
+        .hero:hover p {
+            opacity: 0.8;
+        }
+        .section-title {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .card {
+            margin: 15px;
+            background-color: #3c6c9d;
+            color: white;
+        }
+        .card .btn {
+            background-color:rgb(72, 72, 239);
+            border: none;
+        }
+        .card .btn:hover {
+            background-color: rgb(129, 167, 26);
+        }
+        .icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+            color: rgb(90, 139, 0);
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            background: #343a40;
+            color: white;
+        }
+        .about-box, .skills-box {
+            background-color: #292b2c;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            transition: transform 0.5s ease, background-color 0.5s ease;
+        }
+        .about-box:hover, .skills-box:hover {
+            transform: translateY(-10px);
+            background-color: #1c1e21;
+        }
+        .transition {
+            transition: all 0.5s ease;
+        }
+        .transition:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hafiza Fatima</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Hafiza Fatima, a passionate Full-Stack Web Developer!</p>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 about-box">
+                <p>I am a full-stack web developer with experience in HTML, CSS, JavaScript, PHP, and MySQL. I enjoy creating user-friendly websites and applications that solve real-world problems. My goal is to continuously improve my skills and work on impactful projects.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-3 skills-box"><i class="fab fa-html5 icon"></i>HTML</div>
+            <div class="col-md-3 skills-box"><i class="fab fa-css3-alt icon"></i>CSS</div>
+            <div class="col-md-3 skills-box"><i class="fab fa-js icon"></i>JavaScript</div>
+            <div class="col-md-3 skills-box"><i class="fab fa-php icon"></i>PHP</div>
+            <div class="col-md-3 skills-box"><i class="fas fa-database icon"></i>MySQL</div>
+            <div class="col-md-3 skills-box"><i class="fab fa-bootstrap icon"></i>Bootstrap</div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">E-Commerce Website</h5>
+                        <p class="card-text">A fully functional e-commerce website built with PHP and MySQL.</p>
+                        <a href="./ecommerce.html" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p class="card-text">My personal portfolio showcasing skills and projects.</p>
+                        <a href="./portfolio.html" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p>If you'd like to collaborate or have any questions, feel free to reach out!</p>
+        <p><i class="fas fa-envelope icon"></i>Email: <a href="mailto:queenmalik035@gmail.com">queenmalik035@gmail.com</a></p>
+        <p><i class="fas fa-phone icon"></i>Phone: <a href="tel:+923065614632">0306-5614632</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hafiza Fatima. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
